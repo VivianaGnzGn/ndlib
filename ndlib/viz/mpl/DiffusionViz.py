@@ -76,7 +76,7 @@ class DiffusionPlot(object):
 
         plt.grid(axis="y")
         # plt.title(descr)
-        plt.xlabel("Iterations", fontsize=24)
+        plt.xlabel("Hola Carlos", fontsize=24)
         plt.ylabel(self.ylabel, fontsize=24)
         plt.legend(loc="best", fontsize=18)
         plt.xlim((0, mx))

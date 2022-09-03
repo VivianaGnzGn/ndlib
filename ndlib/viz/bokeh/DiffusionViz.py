@@ -56,13 +56,13 @@ class DiffusionPlot(object):
 
             mx = len(l[0])
             if self.normalized:
-                p.line(range(0, mx), l[1] / self.nnodes, line_width=2, legend=self.srev[k], alpha=0.5, color=cols[i])
+                p.line(range(0, mx), l[1] / self.nnodes, line_width=10, legend=self.srev[k], alpha=0.5, color=cols[i])
             else:
-                p.line(range(0, mx), l[1], line_width=2, legend=self.srev[k], alpha=0.5, color=cols[i])
+                p.line(range(0, mx), l[1], line_width=10, legend=self.srev[k], alpha=0.5, color=cols[i])
 
             i += 1
 
-        p.xaxis.axis_label = 'Carlos'
+        p.xaxis.axis_label = 'Iterations'
         p.title.text = "%s - %s" % (self.model.get_name(), self.title)
         p.yaxis.axis_label = self.ylabel
         p.ygrid[0].grid_line_alpha = 0.5
